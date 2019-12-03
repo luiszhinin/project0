@@ -1,0 +1,153 @@
+
+body {
+  background-color: white;
+}
+
+table#t01 {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 1px;
+    border-color: green;
+    background-color: #D3D3D3;
+    width: 10%;
+    border-spacing: 2px;
+}
+
+p{
+  font-family: verdana;
+  font-size: 15px;
+}
+
+.center{
+  text-align: center;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+
+@media screen and (max-width: 500px) {
+    body{
+        font: 10pt;
+        background-color:white;
+
+    }
+    #principal{
+        margin-bottom: 20px;
+        margin-left: 20%;
+    }
+
+
+
+
+
+}
+
+@media screen and (min-width: 500px) {
+    body{
+        font: 10pt;
+        background-color:white;
+
+    }
+    #principal{
+        margin-left: 280px;
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+#body-container{
+
+    text-align: right;
+    width: 700px;
+    margin: auto;
+}
+
+
+
+p#inside{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+h4{
+    margin-top: 13px;
+    text-align: center;
+}
+
+
+
+
+
+
+.container2 {
+    display: flex;
+    flex-wrap:wrap;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+.container2 > div {
+    background-color: rgb(0,0, 0);
+    font-size: 20px;
+    margin: center;
+
+    width: 250px;
+    border-radius: 2%;
+
+}
+
+.container2 div img {
+    width: 200px;
+    margin-top: 10px;
+
+}
+
+.container2 div img:hover{
+    transform: scale(0.5);
+    border-radius: 95%;
+}
+
+img{
+    transition: all 0.2s ease;
+}
+
+
+.container-fluid1 {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+
+.col-3 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+
+.bg-success1 {
+  background-color: gray !important;
+}
+
+.bg-warning1{
+  background-color: lightgray !important;
+}
