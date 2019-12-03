@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Three</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+          <h1>Agent</h1>
+          <ol>
+            <li><a href="page1.html">Autoencoder</a></li>
+            <li><a href="page2.html">Mediator Network</a></li>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="page4.html">Q-Credit Card Fraud Detector</a></li>
+          </ol>
+
+        </div>
+         <div class="container">
+           <h3>Architecture:</h3>
+
+          <p>The final component of the entire system is an agent
+who is responsible for accurately classifying in real
+time each one of the incoming transactions.
+The agent input is the hidden layer of the MN. The
+output layer are 2 neurons corresponding to the two
+classes of the database. After some accuracy evaluation the amount of neurons in this hidden layer was
+set to 11.</p>
+
+        </div>
+
+
+        <div class="container-fluid">
+          <h2>Parameter Setting</h2>
+        </div>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-8 bg-warning">
+              This section details system specifications such as the
+      learning algorithm, the transfer functions, loss functions and other fundamental characteristics tuned to
+      obtain good performance.
+              <div class="row">
+                <div class="col-6 bg-light">The utilized Agent is based in reinforcement learning. Its activation function is the learning sigmoid and
+the algorithm is a novel version of Deep Q-learning
+used in Mnih et al. (2015). Concerning framework
+our method solves classification problems using Reinforcement learning and an agent which receives rewards depending on the class to which it classifies incoming data. A positive reward is given it classifies
+a transaction correctly, otherwise a negative reward is
+assigned.</div>
+                <div class="col-6 bg-secondary">
+Imbalanced Classification Markov Decision Process Lin et al. (2019) decomposes the task of classification into a sequential decision-making problem.
+The input received by the agent is each of the weights
+xi of the hidden layer of the neural network with its
+respective label li
+. Therefore the training data set is
+D = (x1,l1),(x2,l2),...,(xi
+,li)</div>
+              </div>
+            </div>
+            <div class="col-4 bg-success">The above-mentioned definitions are an essential part
+of formally raising the problem and seeking to optimize the classification policy π
+∗
+: S → A which maximized rewards in ICMDP.
+The final value with the best accuracy value of λ
+is 0.1. The memory replay size M used is 200000 and
+γ value is equal to 0.9.</div>
+          </div>
+        </div>
+
+
+    </body>
+</html>

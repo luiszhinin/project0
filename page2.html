@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Two</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+          <h1>Mediator Network</h1>
+          <ol>
+            <li><a href="page1.html">Autoencoder</a></li>
+            <li><a href="index.html">Principal</a></li>
+            <li><a href="page3.html">Agent</a></li>
+            <li><a href="page4.html">Q-Credit Card Fraud Detector</a></li>
+          </ol>
+
+<h4 class="center">Architecture:</h4>
+
+          <p>A neural network is used to classify transactions. The
+input is given by the hidden layer of the Autoencoder,
+therefore it does not requires data normalization.
+The output layer is given by 2 neurons, which correspond to the 2 possible cases: fraud or genuine.
+This is the base for a metric to measure the performance and find the best structure of the hidden layer,
+which will become important by defining the input for
+the next component.
+After performing some tests which include passing information to other downstream components the
+best found possible structure was a hidden layer with
+11 neurons.</p>
+
+
+
+
+        </div>
+
+
+        <div class="container-fluid1">
+          <h1>Parameter Setting</h1>
+          <div class="container-fluid1">
+            <div class="row no-gutters">
+              <div class="col-3 bg-success1">
+                This section details system specifications such as the
+        learning algorithm, the transfer functions, loss functions and other fundamental characteristics tuned to
+        obtain good performance.    </div>
+              <div class="col-9 bg-warning1" >
+                This supervised learning network uses Backpropagation algorithm with MSE and learning rate equal to
+  0.9. Sigmoid is the activation function that takes the
+  input and compresses the output in the interval [0.1].
+  </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+    </body>
+</html>
